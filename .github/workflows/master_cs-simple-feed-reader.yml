@@ -34,6 +34,6 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'cs-simple-feed-reader'
-        slot-name: 'production'
+        slot-name: 'staging'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_b28b07d820b24448a133c1aad3b89f42 }}
         package: ${{env.DOTNET_ROOT}}/myapp 
